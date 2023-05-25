@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Navigation</title>
+		<style type="text/css">
+		.nav{background: black;}
+		/* list-style: none= 리스트 설정 사라짐 & display: flex =가로로 배치(종속들도)
+			justify-content: flex-end = 오른쪽 끝으로 배치
+		*/
+		.nav > ul {list-style: none; display: flex;
+					justify-content: center;}
+		/*margin : 객체의 바깥 사이즈 조절 & padding : 안쪽 사이즈 조절*/		
+		.nav > ul li{margin : 0px 3px; padding: 10px 10px;}	
+		.nav > ul li a{text-decoration: none; color: white;}
+		/*solid : 테두리선 모양*/	
+		.nav > ul li a :hover {color: orange; 
+							   border-bottom : 1px solid orange;
+							   transition :all 0.25s;}	
+	
+		</style>
+	</head>
+	<body>
+		<nav class ="nav">
+			<ul>
+				<li href="#"><a>HOME</a></li>
+				<li href="#"><a>BOARD</a></li>
+				<li href="#"><a>MEMBER_SHIP</a></li>
+			</ul>
+		</nav>
+		FLEX-start : 왼쪽 끝 정렬 <br> flex-end : 오른쪽 끝 정렬<br>
+		center : 가운데 정렬 <br> space-between : 양쪽 끝 정렬<br>
+		space-around : 요소 좌우 동일 간격으로 정렬
+	</body>
+</html>

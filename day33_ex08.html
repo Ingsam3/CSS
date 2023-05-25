@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Display</title>
+		<style type="text/css">
+			img{width: 100px; height: 100px;}
+			/* display: none = 해당 값 숨기기*/
+			.h02{display: none;}
+			.h01:hover{display: none;} /*마우스 올리면 사라지기*/
+			.h01:hover + .h02 {display: block;} /*인접한 h02 보여주기*/
+			div{text-align: center;}
+		</style>
+	</head>
+	<body>
+		<h1>Hover Effect</h1>
+		<div class="h01"><img src="1.jpg"></div>
+		<div class="h02">
+			<button>기사</button>
+			<button>구독</button>
+		</div>
+	</body>
+</html>

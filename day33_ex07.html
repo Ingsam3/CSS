@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>애니메이션 효과</title>
+		<style type="text/css">
+			div{text-align: center;}
+			.img{width: 100px; height: 100px; transition : all 0.1s;}
+			/* transition : all 0.1s 자연스러운 효과를 줌*/
+			/* transform :scale(1.1) = 1.1배 크기 키우기*/
+			.img:hover{transform :scale(1.1);}
+			/* margin : auto; = 태그 자체를 가운데로 정렬 (웹브라우저의 가운데로)*/
+			.over{overflow: hidden; width: 100px; height: 100px;
+				margin :auto;}
+		</style>
+	</head>
+	<body>
+		<div class="over">
+			<img class ="img" alt="" src="1.jpg">
+		</div>
+	</body>
+</html>

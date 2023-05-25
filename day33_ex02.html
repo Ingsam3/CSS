@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS_02</title>
+		
+		<style type="text/css">
+			/* id > class */
+			#id_01{color:red}
+			.class_01{color:blue}
+			
+			#id_02{background: aqua}
+			.class_02{background: green}
+		</style>
+	</head>
+	<body>
+		<div id="id_01 id_02"> <!-- id 선택자는 속성도 무조건 1개만 적용 가능 -->
+			id를 부여할 경우 문서내의 유일한 값으로 사용<br>
+			문서 내에서 동일한 id를 부여하면 안된다.
+		</div>
+		<div class ="class_01 class_02"> <!-- class는 다중 속성 가능(공백) -->
+			class는 다른 태그에서 사용 가능<br>
+			여러개를 동시에 부여 가능
+		</div>
+	</body>
+</html>
